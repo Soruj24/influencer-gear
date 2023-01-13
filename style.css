@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* influencer start herer */
+.influencer{
+   margin: 0 auto;
+    max-width: 1200px;
+}
+.influencer-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+   
+    padding: 20px;
+    background-color: rgb(220, 223, 225);
+}
+.influencer-list ul{
+    display: flex;
+    gap: 15px;
+}
+.influencer-list ul li{
+    list-style-type: none;
+}
+/* influencer end herer */
+/* main-cemera start herer */
+.main-cemera{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.influencer-text{
+ display: flex;
+ align-items: center;
+}
+.influencer-text .text{
+    width: 360px;
+    padding: 10px;
+}
+.text h1{
+    margin-bottom: 10px;
+}
+.influencer-img{
+     margin-top: 20px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgb(253, 31, 31);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+/* main-cemera end herer */
+/* logo start here */
+.logo-list{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+/* logo end here */
+/* card start here */
+.card-section{
+    background-color: rgb(237, 239, 241);
+}
+.card{
+padding: 20px;
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(3,1fr);
+}
+.popular-Collection{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.cards{
+    width: 350px;
+    transition: all .4s;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(91, 88, 88);
+}
+.cards:hover{
+transform: scale(.90);
+box-shadow: 3px 3px 6px rgb(255, 177, 31);
+}
+.cards img{
+  margin-left: 20px;
+ margin-top: 10px;
+ width: 300px;
+}
+.card-text{
+    padding: 20px;
+    
+}
+.card-text h2{
+    padding: 10px 0;
+    
+}
+.card-text p{
+    padding: 5px 0;
+    opacity: .7;
+}
+/* card end here */
+.secmore{
+    text-align: right;
+    padding: 50px;
+    color: red;
+}
+/* featured-products start here */
+.featured-products{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.products-text h1, p{
+margin: 10px;
+}
+/* featured-products end here */
+footer{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    background-color: rgb(11, 3, 14);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    color: wheat;
+}
+.icon{
+    font-size: 2rem;
+    padding: 10px;
+}
+/* mobil phone */
+@media screen and (max-width:576px) {
+    .main-cemera{
+         display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .logo-list{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+.card  {
+     display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.featured-products{
+    display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+}
+.products-text{
+    text-align: center;
+}
+}
